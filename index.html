@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roshan Parida's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">Roshan <span>Parida</span></a>
+
+            <img src="assets/menu.png" id="menu-icon" alt="menu icon">
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-img">
+                <img src="assets/roshan.png" alt="roshan's profile picture">
+            </div>
+
+            <div class="home-content">
+                <h1>I'm <span>Roshan</span></h1>
+                <h3 class="text-animation">And I'm a <span id="element"></span></h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo maiores ipsum hic illo corporis natus excepturi, repudiandae sed aperiam atque ea! Aliquam officia maxime laudantium explicabo dolor, nostrum officiis voluptatibus.</p>
+
+                <div class="social-icons">
+                    <a href="#"><img src="assets/linkedin.png" alt="linkedin"></a>
+                    <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="assets/github.png" alt="github"></a>
+                </div>
+
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+
+                <h3 class="text-animation"><span id="element2"></span></h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor similique nisi quos autem impedit explicabo dignissimos, delectus nobis dolore saepe facere ipsum mollitia magnam enim, aut corrupti nemo, tempora quae.</p>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="about-img">
+                <img src="assets/roshan.png" alt="roshan's picture">
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">Services</h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <div class="services-info">
+                        <h4>Web Desgin</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-info">
+                        <h4>Front-End Development</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-info">
+                        <h4>UI/UX Desgin</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" placeholder="Contact Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                <input type="submit" value="Send Message" class="btn">
+
+            </form>
+        </section>
+
+        <footer>
+            <div class="social">
+                <a href="#"><img src="assets/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="assets/github.png" alt="github"></a>
+            </div>
+
+            <ul class="list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="copyright"> &copy; Roshan Parida | All rights reserved</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Web Developer', 'UI/UX Designer', 'Front-End Developer'],
+              typeSpeed: 75,
+              loop: true
+            });
+
+            var typed = new Typed('#element2', {
+              strings: ['Web Developer', 'UI/UX Designer', 'Front-End Developer'],
+              typeSpeed: 75,
+              loop: true
+            });
+        </script>
+    </body>
+</html>
