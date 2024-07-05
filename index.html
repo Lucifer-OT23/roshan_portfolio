@@ -2,17 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- Set the viewport to ensure the page is responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Roshan Parida's Portfolio</title>
+        <!-- Link to external stylesheet -->
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <!-- Header section -->
         <header class="header">
+            <!-- Logo and home link -->
             <a href="#home" class="logo">Roshan <span>Parida</span></a>
-
+            <!-- Menu icon for mobile navigation -->
             <img src="assets/menu.png" id="menu-icon" alt="menu icon">
-
+            <!-- Navigation bar -->
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
@@ -21,117 +25,129 @@
             </nav>
         </header>
 
+        <!-- Home section -->
         <section class="home" id="home">
             <div class="home-img">
+                <!-- Profile picture -->
                 <img src="assets/roshan.png" alt="roshan's profile picture">
             </div>
 
             <div class="home-content">
                 <h1>I'm <span>Roshan</span></h1>
                 <h3 class="text-animation">And I'm a <span id="element"></span></h3>
-
+                <!-- Short introduction -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo maiores ipsum hic illo corporis natus excepturi, repudiandae sed aperiam atque ea! Aliquam officia maxime laudantium explicabo dolor, nostrum officiis voluptatibus.</p>
-
+                <!-- Social media icons -->
                 <div class="social-icons">
                     <a href="#"><img src="assets/linkedin.png" alt="linkedin"></a>
                     <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
                     <a href="#"><img src="assets/github.png" alt="github"></a>
                 </div>
-
+                <!-- Hire Me button -->
                 <a href="#" class="btn">Hire Me</a>
             </div>
         </section>
 
+        <!-- About section -->
         <section class="about" id="about">
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
-
+                <!-- Animated text -->
                 <h3 class="text-animation"><span id="element2"></span></h3>
-
+                <!-- Description -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor similique nisi quos autem impedit explicabo dignissimos, delectus nobis dolore saepe facere ipsum mollitia magnam enim, aut corrupti nemo, tempora quae.</p>
-
+                <!-- Read More button -->
                 <a href="#" class="btn">Read More</a>
             </div>
-
+            <!-- Another picture -->
             <div class="about-img">
                 <img src="assets/roshan.png" alt="roshan's picture">
             </div>
         </section>
 
+        <!-- Services section -->
         <section class="services" id="services">
             <h2 class="heading">Services</h2>
-
             <div class="services-container">
+                <!-- Web Design service -->
                 <div class="services-box">
                     <div class="services-info">
-                        <h4>Web Desgin</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
+                <!-- Front-End Development service -->
                 <div class="services-box">
                     <div class="services-info">
                         <h4>Front-End Development</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
+                <!-- UI/UX Design service -->
                 <div class="services-box">
                     <div class="services-info">
-                        <h4>UI/UX Desgin</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                        <h4>UI/UX Design</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact section -->
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
-
             <form action="#">
                 <div class="input-box">
+                    <!-- Full Name input -->
                     <input type="text" placeholder="Full Name">
+                    <!-- Email input -->
                     <input type="email" placeholder="Email">
                 </div>
-
                 <div class="input-box">
+                    <!-- Contact Number input -->
                     <input type="number" placeholder="Contact Number">
+                    <!-- Subject input -->
                     <input type="text" placeholder="Subject">
                 </div>
-
+                <!-- Message textarea -->
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-
+                <!-- Send Message button -->
                 <input type="submit" value="Send Message" class="btn">
-
             </form>
         </section>
 
+        <!-- Footer section -->
         <footer>
             <div class="social">
+                <!-- Social media links -->
                 <a href="#"><img src="assets/linkedin.png" alt="linkedin"></a>
                 <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
                 <a href="#"><img src="assets/github.png" alt="github"></a>
             </div>
-
+            <!-- Footer links -->
             <ul class="list">
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Me</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-
+            <!-- Copyright notice -->
             <p class="copyright"> &copy; Roshan Parida | All rights reserved</p>
         </footer>
 
+        <!-- Link to external JavaScript file -->
         <script src="script.js"></script>
+        <!-- Link to Typed.js library for text animation -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
+            // Initialize Typed.js for the home section
             var typed = new Typed('#element', {
               strings: ['Web Developer', 'UI/UX Designer', 'Front-End Developer'],
               typeSpeed: 75,
               loop: true
             });
 
+            // Initialize Typed.js for the about section
             var typed = new Typed('#element2', {
               strings: ['Web Developer', 'UI/UX Designer', 'Front-End Developer'],
               typeSpeed: 75,
